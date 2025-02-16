@@ -94,7 +94,8 @@
                 "true",
                 "false"
             ],
-            "description": "Enable or disable Cohere Rerank for query results (default: false)."
+            "description": "Enable or disable Cohere Rerank for query results (default: false).",
+            "defaultValue": "false"
         },
         {
             "name": "cohereAPIKey",
