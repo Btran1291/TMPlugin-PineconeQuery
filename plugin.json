@@ -39,7 +39,8 @@
             "name": "topK",
             "type": "number",
             "label": "Top K Results",
-            "description": "The number of results to return from Pinecone (default: 5)."
+            "description": "The number of results to return from Pinecone (default: 5).",
+            "defaultValue": 5
         },
         {
             "name": "openaiEmbeddingModel",
@@ -56,7 +57,8 @@
         {
             "name": "pineconeAPIVersion",
             "label": "Pinecone API Version",
-            "description": "The version of the Pinecone API to use (default: 2024-10)."
+            "description": "The version of the Pinecone API to use (default: 2024-10).",
+            "defaultValue": "2024-10"
         },
         {
             "name": "embeddingDimensions",
@@ -74,7 +76,8 @@
                 "dotproduct",
                 "other"
             ],
-            "description": "The similarity metric used in Pinecone. Used for relevance score calculation if rerank is disabled. Choose 'other' if unsure (default: cosine)."
+            "description": "The similarity metric used in Pinecone. Used for relevance score calculation if rerank is disabled. Choose 'other' if unsure (default: cosine).",
+            "defaultValue": "cosine"
         },
         {
             "name": "namespace",
@@ -106,19 +109,22 @@
         {
             "name": "cohereRerankModel",
             "label": "Cohere Rerank Model",
-            "description": "The Cohere Rerank model to use (default: rerank-v3.5)."
+            "description": "The Cohere Rerank model to use (default: rerank-v3.5).",
+            "defaultValue": "rerank-v3.5"
         },
         {
             "name": "cohereTopN",
             "type": "number",
             "label": "Cohere Top N Results",
-            "description": "The number of reranked results to return from Cohere (default: 5)."
+            "description": "The number of reranked results to return from Cohere (default: 5).",
+            "defaultValue": 5
         },
         {
             "name": "cohereMaxTokensPerDoc",
             "type": "number",
             "label": "Cohere Max Tokens Per Document",
-            "description": "The maximum number of tokens per document for Cohere Rerank (default: 4096)."
+            "description": "The maximum number of tokens per document for Cohere Rerank (default: 4096).",
+            "defaultValue": 4096
         }
     ],
     "authenticationType": "AUTH_TYPE_NONE",
